@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>L3 - HTML 3 - Формы</title>
+  </head>
+  <body>
+    <table align="center">
+      <tr>
+        <td>
+            
+          <h1>Формы</h1>
+
+          <form method="get">
+            <!-- GET форма. Значения формы будут переданы через url -->
+            <input name="search"/>
+            <button>Поиск</button> 
+          </form>
+
+          <br/> 
+          <hr/> <!-- Вставляет горизонтальную линию -->
+          <br/>
+
+          <form method="post">  
+            <!-- POST форма. Значения формы будут переданы в теле запроса. -->
+            <input name="login" type="text" placeholder="Логин"/>
+            <input name="password" type="password" placeholder="Пароль"/>
+          </form>
+
+          <br/> 
+          <hr/>
+          <br/>
+
+          <form method="post" enctype="multipart/form-data">  
+            <!-- POST форма. Значения формы будут переданы в теле запроса. -->
+            <!-- multipart/form-data позволяет передавать файлы-->
+            
+            <div>        
+              <label>Имя: <input name="firstname"/></label>
+              <label for="lastname">Фамилия: </label><input id="lastname" name="lastname"/>
+            </div>
+
+            <br/>
+            
+            <div>        
+              <label>Преподаватель: <input disabled name="teacher" value="Антон" /></label>
+            </div>
+
+            <br/>
+
+            <div>
+              Хочу изучать:
+              <div>
+                <label>
+                  <input type="checkbox" name="learn-html" value="true" /> 
+                  Html
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <input type="checkbox" name="learn-css" value="true"/>
+                  CSS
+                </label>
+              </div>
+
+              <div>
+                <label> 
+                  <input type="checkbox" name="learn-js" value="true"/> 
+                  JavaScript
+                </label>
+              </div>
+              
+              <div>
+                <label> 
+                  <input disabled type="checkbox" name="learn-csharp" value="true"/> 
+                  C#
+                </label>
+              </div>
+            </div>
+
+            <br/>
+
+            <div>
+              Операционная система: 
+              <div>
+                <label>
+                  <input type="radio" name="os" value="windows"/> Windows
+                </label>
+                  
+                <label>
+                  <input type="radio" name="os" value="linux"/> Linux
+                </label>
+                
+                <label> 
+                  <input type="radio" name="os" value="macos"/> MacOS
+                </label>
+                
+                <label> 
+                  <input disabled type="radio" name="os" value="dos"/> DOS
+                </label>
+              </div>
+
+              <br/>
+            </div>
+
+            <div>
+              Предпочитаемый редактор:
+              <select name="select">
+                <option value="">---</option> 
+
+                <optgroup label="IDE">
+                  <option>Visual Studio</option> 
+                  <option>Intelij IDEA</option>
+                  <option>Eclipse</option> 
+                  <option disabled>Delphi</option>
+                </optgroup>
+                
+                <optgroup label="Редакторы кода">
+                  <option selected="selected">Visual Studio Code</option> 
+                  <option>Sublime</option> 
+                  <option>Emacs</option>
+                </optgroup> 
+
+                <optgroup disabled label="Другое">
+                  <option>Word</option> 
+                  <option>Excel</option> 
+                </optgroup>
+              </select>
+            </div>
+            
+            <br/>
+            
+            <div>
+              Примеры работ
+              <input name="examples" type="file" multiple/>
+            </div>
+
+            <br/>
+
+            <div>
+              <button type="submit"> 
+                <img src="send.svg" width="16"/> <i>Отправить</i>
+              </button>
+
+              <button type="reset"> 
+                <i>Очистить</i>
+              </button>  
+              
+              <button type="button" disabled> 
+                Не отправлять
+              </button>  
+            </div>    
+
+            
+          </form>
+
+          <br/> 
+          <hr/>
+          <br/>
+
+          <form>
+            Управление табуляцией. Поставьте курсор в первое поле и нажимайте клавишу Tab
+            <div>
+              <input tabindex="1" value="Я первый элемент в фокусе"><br/>
+              <input tabindex="4" value="Я четвертый"><br/>
+              <input tabindex="3" value="Я третий"><br/>
+              <input tabindex="0" value="Меня пропускают"><br/>
+              <input tabindex="2" value="Я второй"><br/>
+            </div>
+          </form>
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
