@@ -46,7 +46,7 @@
         <li>Формы: form, button, input; аттрибуты type, value, name</li>
       </ul>
     </td>
-    <td valign="top"><a href="./HW-2-3">HW-2-3</a>: предыдущее.</td>
+    <td valign="top"><a href="./HW-2-3">HW-2-3</a></td>
     <td valign="top"></td>
   </tr>
 
