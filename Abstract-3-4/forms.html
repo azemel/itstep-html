@@ -23,6 +23,7 @@
             <!-- POST форма. Значения формы будут переданы в теле запроса. -->
             <input name="login" type="text" placeholder="Логин"/>
             <input name="password" type="password" placeholder="Пароль"/>
+            <button>Войти</button>
           </form>
 
           <br/> 
@@ -137,6 +138,17 @@
             <br/>
 
             <div>
+              О себе              
+              <textarea rows="5"  cols="55" name="about">
+Содержимое тега является его значением,
+                  Включая переносы строк и табуляцию
+<a></a> - любой HTML код внутри textarea конвертируется в обычный текст
+              </textarea>
+            </div>
+
+            <br/>
+
+            <div>
               <button type="submit"> 
                 <img src="send.svg" width="16"/> <i>Отправить</i>
               </button>
@@ -149,8 +161,6 @@
                 Не отправлять
               </button>  
             </div>    
-
-            
           </form>
 
           <br/> 
@@ -158,7 +168,7 @@
           <br/>
 
           <form>
-            Управление табуляцией. Поставьте курсор в первое поле и нажимайте клавишу Tab
+            <h2>Управление табуляцией. Поставьте курсор в первое поле и нажимайте клавишу Tab</h2>
             <div>
               <input tabindex="1" value="Я первый элемент в фокусе"><br/>
               <input tabindex="4" value="Я четвертый"><br/>
@@ -168,6 +178,88 @@
             </div>
           </form>
 
+          <form>
+            <h2>Особые поля и валидация</h2>
+      
+            <div>
+              Скрытое поле (визуально не отображается, но его значение будет отправлено на сервер)
+              <input type="hidden" value="123"/>
+            </div>
+
+            <br/>
+
+            <div>
+              Дата и время
+              <input type="date" name="date"/>
+              <input type="datetime-local" name="dateеime"/>
+              <input type="time" name="time"/>
+            </div>
+
+            <br/>
+
+            <div>
+              Email (валидация, особая клавиатура на тач-устройствах)
+              <input type="email" />
+            </div>
+            
+            <br/>
+            
+            <div>
+              Телефон (особая клавиатура на тач-устройствах)
+              <input type="tel" />
+            </div>
+            
+            <br/>
+            
+            <div>
+              Url (валидация, особая клавиатура на тач-устройствах)
+              <input type="url" />
+            </div>
+            
+            <br/>
+            
+            <div>
+              Поиск (возможна специальная стилизация браузером, возможны глобальные подсказки для ввода)
+              <input type="search"/>
+            </div>
+
+            <br/>
+            
+            <div>
+              Цвет
+              <input type="color"/>
+            </div>
+
+            <br/>
+            
+            <div>
+              Числа
+              <input type="number"/>
+              <input type="number" min="10" max="100"/>
+              <input type="number" min="10" max="100" step="5"/>
+              <input type="range" min="1" max="100" value="80"/>
+            </div>
+        
+            <br/>
+
+            <div>
+              <b>Универсальная валидация для тектовых полей: </b>
+              <div>
+                Обязательное поле: <input type="text" required/>
+              </div>
+              <div>
+                Минимальная и максимальна длина текста: <input type="text" maxlength="7" minlength="3"/>
+              </div>
+              <div>
+                Шаблон в виде регулярного выражения: <input type="text" pattern="[A-Za-z]\d" palceholder="Любая буква, затем любая цифра"/>
+              </div>
+            </div>
+            <br/>
+            <div>
+              <button type="submit">Отправить</button>
+            </div>
+            
+          </form>
         </td>
       </tr>
     </table>

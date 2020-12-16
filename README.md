@@ -38,7 +38,7 @@
   <tr>
     <td valign="top">3</td>
     <td valign="top"><a href="https://zoom.us/rec/share/J4mFjydRRLyiZuWcqL96GJ4yV1fsj8FzHXBsNwH89mVQ300psjiwhsXa2EzhJVLf.0Tempo9p_kyKYWEy?startTime=1607604977000">10.12</a></td>
-    <td valign="top"><a href="./Abstract-3">HTML2</a>
+    <td valign="top"><a href="./Abstract-3-4">HTML2</a>
       <ul>
         <li>Формы: form, label, input (type text, checkbox, radiobutton, select, file)</li>
         <li>Семантические теги текста: h, p, ul, ol, li</li>
@@ -53,22 +53,34 @@
   <tr>
     <td valign="top">4</td>
     <td valign="top"><a>14.12</a></td>
-    <td valign="top"><a>HTML3</a>
+    <td valign="top"><a href="./Abstract-3-4">HTML3</a>
       <ul>
         <li>~ Git, npm serve</li>
         <li>Формы: input, validation.</li>
+      </ul>
+    </td>
+    <td valign="top"><a href="./HW-4">HW-4</a>: создать форму по ТЗ.</td>
+    <td valign="top"></td>
+  </tr>
+
+  <tr>
+    <td valign="top">5</td>
+    <td valign="top"><a>17.12</a></td>
+    <td valign="top"><a>HTML4</a>
+      <ul>
+        <li>Формы: повторение</li>
         <li>Дата аттрибуты</li>
         <li>Разное: audio, video, picture, canvas</li>
         <li>Anchor</li>
         <li>id, class, (name)</li>
       </ul>
     </td>
-    <td valign="top"><a>HW</a>: создать форму.</td>
+    <td valign="top"></td>
     <td valign="top"></td>
   </tr>
 
   <tr>
-    <td valign="top">5</td>
+    <td valign="top">6</td>
     <td valign="top"></td>
     <td valign="top"><a>CSS 1-2</a>
       <ul>
@@ -85,7 +97,7 @@
   </tr>
 
   <tr>
-    <td valign="top">6</td>
+    <td valign="top">7</td>
     <td valign="top"></td>
     <td valign="top"><a>CSS 1-2</a>
       <ul>
@@ -95,7 +107,7 @@
     <td valign="top"></td>
   </tr>
   <tr>
-    <td valign="top">7</td>
+    <td valign="top">8</td>
     <td valign="top"></td>
     <td valign="top"><a>CSS 3-8</a>
       <ul>
@@ -119,16 +131,6 @@
     <td valign="top"></td>
   </tr>
   
-  <tr>
-    <td valign="top">8</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
-      <ul>
-      </ul>
-    </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-  </tr>
   
   <tr>
     <td valign="top">9</td>
