@@ -52,7 +52,7 @@
 
   <tr>
     <td valign="top">4</td>
-    <td valign="top"><a>14.12</a></td>
+    <td valign="top"><a href="https://zoom.us/rec/share/w4WvGyLf-dv82WdDwOiQrV95hI4nXlIUucSzayg6zbmJKpUmPExMbfBDr391aGqj.2udJJkXs_2mCkYqs?startTime=1607951368000">14.12</a></td>
     <td valign="top"><a href="./Abstract-3-4">HTML3</a>
       <ul>
         <li>~ Git, npm serve</li>
