@@ -1,0 +1,58 @@
+/* 
+* 1. #id > .class > tag 
+* 2. Чем позже в коде, тем важнее
+* 3. tag.class > tag
+     tag.class > .class
+     .class.class > .class
+*/
+
+/* 
+div {
+  color: blue;
+  background-color: red;
+} */
+
+
+nav {
+  background-color: chartreuse;
+}
+
+#el1 {
+  background-color: aqua;
+}
+
+#el2 {
+  background-color: tomato;
+}
+
+.cls1 {
+  background-color: burlywood;
+}
+
+.cls2 {
+  background-color: yellow;
+}
+
+
+p {
+  color: red;
+}
+
+p.cls1 {
+  color: yellowgreen;
+}
+
+
+.cls1.cls2 {
+  color: blueviolet;
+}
+
+
+.cls1 > div div {
+  background-color: brown;
+}
+
+
+body {
+  background-color: cadetblue;
+}

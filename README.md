@@ -65,9 +65,10 @@
 
   <tr>
     <td valign="top">5</td>
-    <td valign="top"><a>17.12</a></td>
+    <td valign="top"><a href="https://zoom.us/rec/share/2iXELtqIxrMHVzZsJhCaeV4ZQfsy-go1rM_c9uVOjgcTCRf0A5NyBq-DMD2UNiT9.VHUuZCAU2EgKNZlz?startTime=1608209393000">17.12</a></td>
     <td valign="top"><a>HTML4</a>
       <ul>
+        <li>~ npm serve</li>
         <li>Формы: повторение</li>
         <li>Дата аттрибуты</li>
         <li>Разное: audio, video, picture, canvas</li>
@@ -75,7 +76,7 @@
         <li>id, class, (name)</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./HW-4">HW-4</a>: Добавить стили, которые прошли</td>
     <td valign="top"></td>
   </tr>
 
@@ -93,7 +94,7 @@
       </ul>
     </td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./EX-3">EX3</a></td>
   </tr>
 
   <tr>
