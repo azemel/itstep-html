@@ -82,7 +82,7 @@
 
   <tr>
     <td valign="top">6</td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://zoom.us/rec/share/Mc8Dg2YuPH3NgsTTk1Hc0CjYWkx1qeEkxDaPYxHu7UTdBjOZI0zH3EwGm7EBxVhA.xdXlYGXepP43pxn7?startTime=1608468442000">20.12</td>
     <td valign="top"><a>CSS 1-2</a>
       <ul>
         <li>style аттрибут, style тэг, link</li>
