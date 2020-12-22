@@ -1,19 +1,26 @@
-/* 
-* 1. #id > .class > tag 
+/*
+  DOM
+    window / viewport
+    html - Documnet
+    body - body
+
+*/
+/*
+* 1. #id > .class > tag
 * 2. Чем позже в коде, тем важнее
 * 3. tag.class > tag
      tag.class > .class
      .class.class > .class
 */
-/* 
+/*
 * {
 
-  display;
+  display; inline, block, inline-block
 
   position;
 
   top, bottom, right, left,
-  
+
   width
   height
 
@@ -33,66 +40,77 @@
 
 } */
 
+/*
+height
+> min-height
+> max-height
+*/
+
 html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+  /* height: 100%; */
+  /* height: -webkit-fill-available; */
 }
 
 body {
-  position: relative;
-  height: 100%;
-  /* height: 100%; */
-  /* min-height: 100%; */
-
-  /* height: 1px;
-  min-height: 100%; */
+  /* mheight: 100%; */
   margin: 0;
-  padding: 0;
+
+  padding: 50px;
+  /* border: 1px solid red; */
 }
 
-.disclaimer {
-  position: absolute;
-  bottom: 0
+* {
+  box-sizing: border-box;
 }
 
-span {
-  /* display: inline-block; */
-  background-color: gold;
-  width: 10%;
-  height: 10%;
-  /* margin-left: auto;
-  margin-right: auto; */
-}
 
+/* viewport height */
 .container {
-  height: 100%;
-  background-color: hotpink;
+  margin: -20px auto;
+  /* border: 1px solid red;s */
+  /* padding: 1px; */
+  /* padding: 20px; */
 }
 
-.container-2 {
-  background-color: brown;  
+.wrap {
+  background-color: coral;
+}
+
+.a {
+  border: 2px solid red;
 }
 
 .child {
-  /* display: table; */
-  background-color: green;
-  width: 50%;
-  height: 50px;
-
-  /* margin-left: auto;
-  margin-right: auto; */
+  margin: -10%;
+  /* margin: 20px; */
+  background-color: cornflowerblue;
 }
 
 
+.item {
+  /* margin: 20px */
+  padding: 20px 0;
+}
 /* 
-div {
-  display: inline;
-  display: block;
-  display: inline-block;
-  display: flex;
-  display: grid;
-
-  display: table;
-
+.item:first-child {
+  padding-top: 0;
+}
+.item:last-child {
+  padding-bottom: 0;
 } */
+
+
+.item > div {
+  background-color: indigo;
+  padding: 10px;
+}
+
+/*
+.container > div {
+  height: 10%;
+} */
+
+
+.container-2 {
+  background-color: cornflowerblue;
+}
