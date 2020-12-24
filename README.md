@@ -109,7 +109,7 @@
   </tr>
   <tr>
     <td valign="top">8</td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://zoom.us/rec/share/3_GOLOKxjhhuAK3mzB3viQ0dtU6qCv2RGolWaulOoJ_23nSg8GD6fjnDEyubjk7W.3g9t2UFOnXLeMu8W?startTime=1608728022000">24.12</a></td>
     <td valign="top"><a>CSS 3-8</a>
       <ul>
         <li>Display, opacity, position, z-index</li>
@@ -129,7 +129,7 @@
       </ul>
     </td>
     <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./Ex-4">EX-4</a>: Задачи на размер и отступы</td>
   </tr>
   
   
