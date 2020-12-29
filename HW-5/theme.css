@@ -1,0 +1,44 @@
+body {
+  font: 400 15px  Arial, sans-serif;
+}
+
+.lawn {
+  background-color: hsl(120, 58%, 33%);
+}
+  
+.terrace {
+  background-color: hsl(28, 32%, 66%);
+}
+
+.dining {
+  background-color: hsl(0, 80%, 90%);
+}
+
+.kitchen {
+  background-color: hsl(51, 80%, 90%);
+}
+
+.storage {
+  background-color: hsl(102, 80%, 90%);
+} 
+
+.bathroom {
+  background-color: hsl(204, 80%, 90%);
+} 
+
+.hall {
+  background-color: hsl(255, 80%, 90%);
+}
+
+.entry {
+  background-color: hsl(153, 80%, 90%);
+}
+
+.guest {
+  background-color: hsl(306, 80%, 90%);
+}
+
+.garage {  
+  background-color: hsl(0, 0%, 90%);
+}
+

@@ -66,7 +66,7 @@
   <tr>
     <td valign="top">5</td>
     <td valign="top"><a href="https://zoom.us/rec/share/2iXELtqIxrMHVzZsJhCaeV4ZQfsy-go1rM_c9uVOjgcTCRf0A5NyBq-DMD2UNiT9.VHUuZCAU2EgKNZlz?startTime=1608209393000">17.12</a></td>
-    <td valign="top"><a>HTML4</a>
+    <td valign="top"><a href="./Abstract-3-4">HTML4</a>
       <ul>
         <li>~ npm serve</li>
         <li>Формы: повторение</li>
@@ -74,6 +74,7 @@
         <li>Разное: audio, video, picture, canvas</li>
         <li>Anchor</li>
         <li>id, class, (name)</li>
+        <li>style аттрибут, style тэг, link</li>
       </ul>
     </td>
     <td valign="top"><a href="./HW-4">HW-4</a>: Добавить стили, которые прошли</td>
@@ -83,64 +84,62 @@
   <tr>
     <td valign="top">6</td>
     <td valign="top"><a href="https://zoom.us/rec/share/Mc8Dg2YuPH3NgsTTk1Hc0CjYWkx1qeEkxDaPYxHu7UTdBjOZI0zH3EwGm7EBxVhA.xdXlYGXepP43pxn7?startTime=1608468442000">20.12</td>
-    <td valign="top"><a>CSS 1-2</a>
+    <td valign="top"><a href="./Abstract-5">CSS1</a>
       <ul>
         <li>style аттрибут, style тэг, link</li>
         <li>Синтаксис. Vendor prefixes </li>
         <li>Селекторы, псевдо селекторы, псевдо элементы</li>
-        <li>БЕМ</li>
-        <li>?Типы данных (размеры, цвета)</li>
-        <li>*Emmet abbreviations</li>
+        <li>Типы данных (размеры)</li>
+        <li>Блочная модель. Ширина, высота</li>
+        <li>Display. block, inline, inline-block</li>
       </ul>
     </td>
     <td valign="top"></td>
-    <td valign="top"><a href="./EX-3">EX3</a></td>
+    <td valign="top"><a href="./EX-3">EX-3</a>: Потренироваться выбирать селекторы</td>
   </tr>
 
   <tr>
     <td valign="top">7</td>
     <td valign="top"><a href="https://zoom.us/rec/share/H9ngUf5I6JLRqOSBh0pCDGi7pYeFoxDxFAGOHpCt-0R72_i8KxTUmr3kFPPdrUmw.NWgSec7x-7rCKfKo?startTime=1608555431000">21.12</a></td>
-    <td valign="top"><a>CSS 1-2</a>
+    <td valign="top"><a href="./Abstract-5">CSS2</a>
       <ul>
+        <li>Высота, ширина, максимальная, минимальная</li>
+        <li> box-sizing, overflow</li>
+        <li>Отступы padding</li>
+        <li>Границы</li>
+        <li>Отступы margin. Отрицательные margin</li>
       </ul>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>
+
   <tr>
     <td valign="top">8</td>
-    <td valign="top"><a href="https://zoom.us/rec/share/3_GOLOKxjhhuAK3mzB3viQ0dtU6qCv2RGolWaulOoJ_23nSg8GD6fjnDEyubjk7W.3g9t2UFOnXLeMu8W?startTime=1608728022000">24.12</a></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/3_GOLOKxjhhuAK3mzB3viQ0dtU6qCv2RGolWaulOoJ_23nSg8GD6fjnDEyubjk7W.3g9t2UFOnXLeMu8W?startTime=1608728022000">23.12</a></td>
+    <td valign="top"><a href="./Abstract-5">CSS3</a>
       <ul>
-        <li>Display, opacity, position, z-index</li>
-        <li>Box model. width, height, padding, border, box-sizing, overflow</li>
-        <li>Margin, слияние margin</li>
-        <li>Шрифт,  line-hight, float</li>
-        <li>Цвета, фон, градиенты, картинки</li>
-        <li>Border, outline, shadow</li>
-        <li>? Шрифты иконок</li>
-        <li>Column</li>
-        <li>Flex</li>
-        <li>Grid</li>
-        <li>Filter</li>
-        <li>Transform</li>
-        <li>Transition, animation</li>
-        <li>Misc: counter, word-wrap, text-overflow...</li>
+        <li>Упражнения на размеры и отступы</li>
+        <li>Скругление границ</li>
       </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"><a href="./Ex-4">EX-4</a>: Задачи на размер и отступы</td>
+    <td valign="top"><a href="./EX-4">EX-4</a>: как минимум 3 из 6 задач</td>
+    <td valign="top"><a href="./EX-4">EX-4</a></td>
   </tr>
-  
-  
+
   <tr>
     <td valign="top">9</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/d0lh0nQYMRFTKYAXKZ9ynP7DuCwlJrIcbmJiFoKrtisKy6vCERdUiL1RGuaVprMU.M00cqXluMEbPQxHL?startTime=1608814444000">24.12</a></td>
+    <td valign="top"><a href="./Abstract-6">CSS4</a>
       <ul>
+        <li>Position, position: absolute, z-index</li>
+        <li>Flex</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-4">HW-4</a>: Сверстать форму персонажа используя flex<br/>
+      <a href="./HW-5">HW-5 (со следующего занятия)</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
   
@@ -149,6 +148,17 @@
     <td valign="top"></td>
     <td valign="top"><a>CSS 3-8</a>
       <ul>
+        <li>Flex</li>
+        <li>Шрифт,  line-hight, float</li>
+        <li>Цвета, фон, градиенты, картинки</li>
+        <li>outline, shadow</li>
+        <li>? Шрифты иконок</li>
+        <li>Column</li>
+        <li>Grid</li>
+        <li>Filter</li>
+        <li>Transform</li>
+        <li>Transition, animation</li>
+        <li>Misc: counter, word-wrap, text-overflow...</li>
       </ul>
     </td>
     <td valign="top"></td>
