@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    html,body {
+      height: 100%;
+      margin: 0;
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    .container1, .container2 {
+      height: 40%;
+    }
+
+    .cell {
+      /* border: 3px solid red; */
+    }
+
+    .col {
+      /* border: 3px solid blue;
+      padding: 5px; */
+      flex: 1 0 auto;
+
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .col .cell {
+      flex: 1 0 auto;
+      /* height: 50%; */
+    }
+
+    .row {
+      /* border: 3px solid blue;
+      padding: 5px; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      justify-content: flex-start;
+
+      height: 50%;
+    }
+
+    .row .cell {
+      height: 100%;
+      flex: 1 0 auto;
+    }
+
+    .cell1 {
+    background-color: #AE8799;
+      /* background-color: rgb(84, 171, 20); */
+      /* background-color: hsla(100, 20%, 35%, 0.5); */
+    }
+    .cell2 {
+      background-color: cadetblue;
+    }
+    .cell3 {
+      background-color: chartreuse;
+    }
+    .cell4 {
+      background-color: coral;
+    }
+    .cell5 {
+      background-color: darkcyan;
+    }
+    .cell6 {
+      background-color: darkmagenta;
+    }
+
+
+    /* .col1 .cell1 {
+      height: 40%;
+    }
+    .col1 .cell2 {
+      height: 50%;
+    } */
+
+
+    .row1 .cell1 {
+      flex: 2 0 auto;
+    }
+
+
+    .col1 {
+      flex: 0 0 400px;
+    }
+
+
+    .col2 {
+      flex: 1 0 0;
+
+      /* flex-grow: 1 ;
+      flex-shrink: 0;
+      flex-basis: 100px; */
+
+      overflow: hidden;
+    }
+
+    .col3 {
+      flex: 2 0 0;
+      overflow: hidden;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container1">
+    <div class="col col1">
+      <div class="cell cell1">11</div>
+      <div class="cell cell2">12</div>
+      <div class="cell cell7">13</div>
+    </div>
+    <div class="col col2">
+      <div class="cell cell3">21 asdfklsdajflkjdsalkfjlskadjflksadjflskadjf</div>
+      <div class="cell cell4">22</div>
+    </div>
+    <div class="col col3">
+      <div class="cell cell5">31</div>
+      <div class="cell cell6">32</div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <div class="container2">
+    <div class="row row1">
+      <div class="cell cell1">11</div>
+      <div class="cell cell3">21</div>
+      <div class="cell cell5">31</div>
+    </div>
+    <div class="row">
+      <div class="cell cell2">12</div>
+      <div class="cell cell4">22</div>
+      <div class="cell cell6">32</div>
+      <div class="cell cell7">32</div>
+    </div>
+  </div>
+
+</body>
+</html>

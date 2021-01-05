@@ -145,6 +145,21 @@
   
   <tr>
     <td valign="top">10</td>
+    <td valign="top"><a href="https://zoom.us/rec/share/_ZEWiH-xwVPIctZJhZi88khk443hcgeubcAWBs_aXR_fFj4JecIY_kogzhQzy6c6.tJS0zu5HNiHoMF8H?startTime=1609765191000">04.01</a></td>
+    <td valign="top"><a>CSS5</a>
+      <ul>
+        <li>Flex (пропорции)</li>
+        <li>Цвета: rgb</li>
+      </ul>
+    </td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
+    <td valign="top"></td>
+  </tr>
+  
+  <tr>
+    <td valign="top">11</td>
     <td valign="top"></td>
     <td valign="top"><a>CSS 3-8</a>
       <ul>
@@ -159,17 +174,6 @@
         <li>Transform</li>
         <li>Transition, animation</li>
         <li>Misc: counter, word-wrap, text-overflow...</li>
-      </ul>
-    </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
-  </tr>
-  
-  <tr>
-    <td valign="top">11</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
-      <ul>
       </ul>
     </td>
     <td valign="top"></td>
