@@ -15,6 +15,7 @@
       flex-wrap: nowrap;
       align-items: stretch;
       justify-content: flex-start;
+      background-color: red;
     }
 
     .container1, .container2 {
@@ -47,7 +48,7 @@
       padding: 5px; */
       display: flex;
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       align-items: stretch;
       justify-content: flex-start;
 
@@ -56,19 +57,31 @@
 
     .row .cell {
       height: 100%;
-      flex: 1 0 auto;
+      flex: 1 0 400px;
     }
 
     .cell1 {
-    background-color: #AE8799;
+      background-color: #AE8799;
       /* background-color: rgb(84, 171, 20); */
-      /* background-color: hsla(100, 20%, 35%, 0.5); */
+      /* background-color: hsla(160, 41%, 43%, 0.1); */
+      /* background-color: transparent; */
+      /* opacity: 0; */
+      /* display: none; */
+      font-size: 40px;
+      /* order: 1; */
     }
     .cell2 {
-      background-color: cadetblue;
+      background-color: hsl(83, 53%, 48%);
+      /* order: 2; */
     }
+
+    .cell7 {
+      /* order: 3; */
+    }
+
     .cell3 {
-      background-color: chartreuse;
+      background-color: hsl(120, 50%, 90%);
+      /* order: 1; */
     }
     .cell4 {
       background-color: coral;
@@ -89,9 +102,9 @@
     } */
 
 
-    .row1 .cell1 {
+    /* .row1 .cell1 {
       flex: 2 0 auto;
-    }
+    } */
 
 
     .col1 {
@@ -139,16 +152,16 @@
 
   <div class="container2">
     <div class="row row1">
-      <div class="cell cell1">11</div>
-      <div class="cell cell3">21</div>
-      <div class="cell cell5">31</div>
+      <div class="cell cell1">Картинка</div>
+      <div class="cell cell3">Описание</div>
+      <div class="cell cell5">Кнопка купить</div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="cell cell2">12</div>
       <div class="cell cell4">22</div>
       <div class="cell cell6">32</div>
       <div class="cell cell7">32</div>
-    </div>
+    </div> -->
   </div>
 
 </body>

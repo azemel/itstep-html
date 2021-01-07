@@ -255,3 +255,13 @@ body.q6 {
   padding: 20px;
   width: 200px;
 } */
+
+.mouth  {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  left: 20%;
+  height: 50%;
+  border-radius: 50%;
+  border-bottom: 5px dotted black;
+}

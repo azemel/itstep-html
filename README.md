@@ -160,20 +160,13 @@
   
   <tr>
     <td valign="top">11</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/2Y8okG26r7TXxnG51q8CqV2aDYtVejD_06uMgqVyJ6AyP0pERhCFwqh5UyEIKewv.CNU8PXost6iMyR9N?startTime=1609937626000">06.01</a></td>
+    <td valign="top"><a>CSS6</a>
       <ul>
-        <li>Flex</li>
-        <li>Шрифт,  line-hight, float</li>
-        <li>Цвета, фон, градиенты, картинки</li>
-        <li>outline, shadow</li>
-        <li>? Шрифты иконок</li>
-        <li>Column</li>
-        <li>Grid</li>
-        <li>Filter</li>
-        <li>Transform</li>
-        <li>Transition, animation</li>
-        <li>Misc: counter, word-wrap, text-overflow...</li>
+        <li>Flex: order</li>
+        <li>Цвета: hsl</li>
+        <li>Шрифты</li>
+        <li>Шрифты иконок</li>
       </ul>
     </td>
     <td valign="top"></td>
@@ -185,6 +178,15 @@
     <td valign="top"></td>
     <td valign="top"><a>CSS 3-8</a>
       <ul>
+        <li>Шрифт,  line-hight, float</li>
+        <li>Цвета, фон, градиенты, картинки</li>
+        <li>outline, shadow</li>
+        <li>Column</li>
+        <li>Grid</li>
+        <li>Filter</li>
+        <li>Transform</li>
+        <li>Transition, animation</li>
+        <li>Misc: counter, word-wrap, text-overflow...</li>
       </ul>
     </td>
     <td valign="top"></td>
