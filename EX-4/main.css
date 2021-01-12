@@ -264,4 +264,6 @@ body.q6 {
   height: 50%;
   border-radius: 50%;
   border-bottom: 5px dotted black;
+  border-left: 5px dotted transparent;
+  border-right: 5px dotted transparent;
 }

@@ -169,42 +169,42 @@
         <li>Шрифты иконок</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
   
   <tr>
     <td valign="top">12</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/PYDuutMU0gFgEZ4Mua1QqU_rcFCO_iu7MJ9SJmwD890Mb6xBVaC14SZe3ymcaCd4.oTMFX74x-VF1WxDP?startTime=1610110234000">08.10</a></td>
+    <td valign="top"><a>CSS7</a>
       <ul>
-        <li>Шрифт,  line-hight, float</li>
-        <li>Цвета, фон, градиенты, картинки</li>
-        <li>outline, shadow</li>
-        <li>Column</li>
-        <li>Grid</li>
-        <li>Filter</li>
-        <li>Transform</li>
-        <li>Transition, animation</li>
-        <li>Misc: counter, word-wrap, text-overflow...</li>
+        <li>line-hight, float</li>
+        <li>Фон, градиенты, картинки</li>
+        <li>outline</li>
       </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
+    <td valign="top">
+      <a href="./EX-5">EX-5</a>: Упражнение на flex
+    </td>
   </tr>
   
   <tr>
     <td valign="top">13</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/J8Io0tTy-kr6ReqjoKuAyvp7BJGBA-6ZexO5ckj1dpoHooX5IargPLGaEkHgrBTT.zkWCdjMpfcFD9a-W?startTime=1610369532000">11.01</a></td>
+    <td valign="top"><a>CSS8</a>
       <ul>
-        <li>Стилизация форм</li>
-        <li>Layout: Табличный, float, flex, grid.</li>
-        <li>Grid system</li>
-        <li>...</li>   
+        <li>shadow</li>
+        <li>Разбор HW-5</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
 
@@ -212,7 +212,19 @@
     <td valign="top">14</td>
     <td valign="top"></td>
     <td valign="top"><a>CSS 9-11</a>
-      <ul></ul>
+      <ul>
+        <li>outline, shadow</li>
+        <li>Column</li>
+        <li>Grid</li>
+        <li>Filter</li>
+        <li>Transform</li>
+        <li>Transition, animation</li>
+        <li>Misc: counter, word-wrap, text-overflow...</li>
+        <li>Стилизация форм</li>
+        <li>Layout: Табличный, float, flex, grid.</li>
+        <li>Grid system</li>
+        <li>...</li>   
+      </ul>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
