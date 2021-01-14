@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Малевич</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .easel {
+      height: 800px;
+      position: relative;
+    }
+
+    .palette {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      transform: translateX(-100%) translateX(-10px)
+    }
+
+    .reference {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      opacity: 0.1;
+    }
+
+    .canvas {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+
+
+      background-color: #f1f2ec;
+    }
+
+
+    .shape {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+
+      background-color: grey;
+    }
+
+    /* .rect1 {
+      transform-origin: top left;
+      transform: translate(190px, 190px) rotateZ(-45deg) scale(1.2, 0.8);
+      background-color: #efa601;
+    } */
+
+  </style>
+</head>
+<body>
+  <div class="easel">
+    <img class="palette" src="easy.jpg"/>
+    <img class="reference" src="easy.jpg">
+    <div class="canvas">
+      <!-- <div class="shape rect1"></div> -->
+    </div>
+  </div>
+</body>
+</html>

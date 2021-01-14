@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.lawn {
+  padding: 4%;
+  min-width: 500px;
+}
+
+.house {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 1 280px;
+  align-items: stretch;
+}
+
+.terrace {
+  flex: 1 1 200px; 
+}
+
+.west-wing {
+  width: 100%;
+  height: 100%;
+
+  padding: 30% 0 30% 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.east-wing {
+  flex: 1.5 1 300px;
+  justify-content: flex-end;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.dining {
+  width: 100%;
+  flex: 1.5 0 3px;
+}
+
+.kitchen {
+  width: 75%;
+  flex: 1 0 2px; 
+}
+
+.auxiliary {
+  flex: 3 0 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+} 
+
+.storage {
+  flex: .35 0 7px; 
+} 
+
+.bathroom {
+  flex: .65 0 13px; 
+} 
+
+.hall {
+  flex: 4 0 4px;
+}
+
+.entry {
+  flex: 0 0 200px;
+}
+
+.guest {
+  flex: .9 0 0px;
+  width: 100%;
+  max-width: 500px;
+  border-top-right-radius: 80px;
+}
+
+.garage {
+  flex: 0 0 200px;
+}
+
+
+.caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

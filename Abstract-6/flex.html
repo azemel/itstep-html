@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      min-height: 100%;
+      display: flex;
+      
+      flex-direction: column;
+      
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+
+    .block1, .block2, .block3 {
+    }
+
+    .block1 {
+      flex: 0 0 200px;
+      background-color: indianred;
+    }
+
+    .block3 {
+      flex: 0 0 auto;
+      background-color: royalblue;
+
+    }
+
+
+    .block2 {
+      flex: 1 0 0;
+      background-color: red;
+
+      
+      display: flex;
+      flex-direction: row;
+
+      justify-content: flex-start;
+      align-items: flex-start;
+     }
+
+
+     .aside {
+        flex: 0 0 300px;
+        background-color: slateblue;
+        order: 3
+        
+      }
+
+     .main {
+        background-color: springgreen;
+        flex: 1 1 0;
+        align-self: stretch;
+     }
+
+  </style>
+
+</head>
+<body>
+  <div class="block1"></div>
+  <div class="block2">
+    <div class="aside">
+      Search MDN
+    </div>
+    <div class="main">
+      Search MDN
+      Search MDN
+      Sign in
+      top
+      Веб-технологии для разработчиков
+      CSS
+      top
+      Select your preferred language
+      Русский
+       Change language
+      Jump to section
+      Синтаксис
+      Пример
+      Спецификации
+      Совместимость с браузерами
+      CSS свойство top частично определяет вертикальную позицию позиционируемого элемента. Оно не влияет на непозиционируемые элементы (т.е. top не применится, если задано position: static).
+      
+      
+      Эффект свойства top зависит от того, как позиционируется элемент (то есть от значения свойства position):
+      
+      Когда задано position: absolute или fixed — значение свойства top устанавливается как расстояние между верхней гранью элемента и верхней гранью родительского контейнера.
+      Когда задано position: relative — значение свойство top устанавливается как расстояние, на которое смещается верхний край элемента от нормальной позиции.
+      Когда задано position: sticky — свойство top работает так, как при position: relative во время нахождения элемента внутри области просмотра, и как position: fixed вне области просмотра.
+      Когда задано position: static — свойство top не имеет никакого эффекта.
+      Когда заданы оба свойства top и bottom, а свойство position установлено как absolute или fixed, то оба свойства top и bottom учитываются. Во всех остальных ситуациях, если height как-либо ограничена или position установлено как relative, то свойство top будет учтено, а bottom — проигнорировано.
+        
+    </div>
+
+</div>
+  <div class="block3">
+Когда задано position: static — свойство top не имеет никакого эффекта.
+Когда задано position: static — свойство top не имеет никакого эффекта.
+
+  </div>
+
+</body>
+</html>

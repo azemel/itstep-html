@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: hsla(0, 0%, 0%, .2);
+      width: 100px;
+      height: 100px;
+      position: relative;
+
+      perspective: 400px;
+
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+    }
+
+    .shape {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      /* background: 
+        linear-gradient(45deg, hsla(0, 60%, 60%, .5), transparent,  hsla(180, 60%, 60%, .5)),
+        linear-gradient(-45deg, hsla(90, 60%, 60%, .5), transparent, hsla(270, 60%, 60%, .5)); */
+    
+      transform-origin: top left;
+
+    }
+
+    .shape1 {
+      background-color: red;
+      transform: translateZ(0px);
+      transform: rotateZ(30deg) translateX(100px) scale(2) rotateZ(-30deg);
+    }
+
+    .shape2 {
+      
+      background-color: blue;
+      transform: rotateX(0deg);
+      
+      backface-visibility: hidden;
+    }
+
+    .pers250 {
+    perspective: 250px;
+    -webkit-perspective: 250px;
+}
+.pers350 {
+    perspective: 350px;
+    -webkit-perspective: 350px;
+}
+.pers500 {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+}
+
+/* Определяем div.container, div.cube, и свойства граней куба */
+ .container {
+   width: 200px;
+   height: 200px;
+   margin: 75px 0 0 75px;
+   border: none;
+}
+.cube {
+   width: 100%;
+   height: 100%;
+   backface-visibility: visible;
+   perspective-origin: 150% 150%;
+   transform-style: preserve-3d;
+
+   transform: rotateX(45deg);
+}
+.face {
+   display: block;
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   border: none;
+   line-height: 100px;
+   font-family: sans-serif;
+   font-size: 60px;
+   color: white;
+   text-align: center;
+}
+
+/* Определяем каждую грань в зависимости от направления */
+ .front {
+   background: rgba(0, 0, 0, 0.3);
+   transform: translateZ(50px);
+   -webkit-transform: translateZ(50px);
+}
+.back {
+   background: rgba(0, 255, 0, 1);
+   color: black;
+   transform: rotateY(180deg) translateZ(50px);
+   -webkit-transform: rotateY(180deg) translateZ(50px);
+}
+.right {
+   background: rgba(196, 0, 0, 0.7);
+   transform: rotateY(90deg) translateZ(50px);
+   -webkit-transform: rotateY(90deg) translateZ(50px);
+}
+.left {
+   background: rgba(0, 0, 196, 0.7);
+   transform: rotateY(-90deg) translateZ(50px);
+   -webkit-transform: rotateY(-90deg) translateZ(50px);
+}
+.top {
+   background: rgba(196, 196, 0, 0.7);
+   transform: rotateX(90deg) translateZ(50px);
+   -webkit-transform: rotateX(90deg) translateZ(50px)
+}
+.bottom {
+   background: rgba(196, 0, 196, 0.7);
+   transform: rotateX(-90deg) translateZ(50px);
+   -webkit-transform: rotateX(-90deg) translateZ(50px);
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cube">
+      <div class="face front">1</div>
+      <div class="face back">2</div>
+      <div class="face right">3</div>
+      <div class="face left">4</div>
+      <div class="face top">5</div>
+      <div class="face bottom">6</div>
+    </div>
+  </div>
+</body>
+</html>

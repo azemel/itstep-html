@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.lawn {
+  padding: 4%;
+  min-width: 700px;
+}
+
+.house {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+
+  flex: 0 1 280px;
+  align-items: stretch;
+}
+
+.terrace {
+  flex: 1 1 200px; 
+}
+
+.west-wing {
+  width: 100%;
+  height: 100%;
+
+  padding: 30% 0 30% 30%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  
+  position: relative;
+  z-index: 2;
+  margin-right: -3px;
+}
+
+.east-wing {
+  flex: 1.5 1 300px;
+  justify-content: flex-end;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 2;
+  margin-left: -3px;
+}
+
+.auxiliary {
+  flex: 3 0 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+} 
+
+.room {
+  border: 1px solid black;
+}
+
+.walls, .middle, .garage {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+
+  padding: 6px;
+
+  background-color: white;
+}
+
+.middle {
+  padding: 3px;
+}
+
+.middle .room {
+  margin: 3px;
+}
+
+.dining, .kitchen, .guest, .garage {
+  height: 100%;
+}
+
+.dining-walls {
+  width: 100%;
+  flex: 1.5 0 3px;
+
+  border-right-width: 0;
+  padding-right: 0;
+}
+
+.kitchen-walls {
+  width: 75%;
+  flex: 1 0 2px; 
+
+  border-right-width: 0;
+  border-top-width: 0;
+
+  padding-right: 0;
+  padding-top: 0;
+
+  margin-top: -3px;
+} 
+
+.guest-walls {
+  flex: .9 0 0px;
+  max-width: 500px;
+  border-top-right-radius: 80px;
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+
+  margin-bottom: -3px;
+  position: relative;
+  z-index: 3;
+}
+
+.guest {
+  border-top-right-radius: 71px;
+}
+
+.garage-walls {
+  flex: 0 0 212px;
+
+  border-left-width: 0;
+  border-bottom-width: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+.garage {
+  border-width: 3px 0 0 3px;
+  padding: 0;
+  margin-right: -3px;
+}
+
+
+.storage {
+  flex: .35 0 7px; 
+} 
+
+.bathroom {
+  flex: .65 0 13px; 
+} 
+
+.hall {
+  flex: 4 0 4px;
+}
+
+.entry {
+  flex: 0 0 193px;
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.pillar {
+  box-sizing: content-box;
+  background-color: white;
+  width: 6px;
+  height: 6px;
+  border: 3px solid black;
+} 
+
+.terrace {
+  flex: 1 1 200px; 
+  display: flex;
+}
+
+.terrace-pillars {
+  flex: 0 0 auto;
+  padding: 10px 0 10px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.garage {
+  position: relative;
+}
+
+.garage-pillar {
+  position: absolute;
+  right: 0px;  
+}
+
+.garage-pillar-north {
+  top: -3px;
+  border-top-width: 0;
+}
+
+.garage-pillar-south-1 {
+  bottom: 0;
+  right: 9px;
+  border-right-width: 0;
+}
+
+.garage-pillar-south-2 {
+  bottom: 0;
+  height: 12px;
+}
+
+
+
+.cars {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  overflow: hidden;
+}
+
+.car {
+  height: 100%;
+  width: 145px;
+  flex: 0 0 auto;
+  padding: 30px;
+}
+
+.car::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid gray;
+
+  border-top-left-radius: 45px 30px;
+  border-top-right-radius: 45px 30px;
+
+  border-bottom-left-radius: 50px 10px;
+  border-bottom-right-radius: 50px 10px;
+}
+
+.measurable {
+  position: relative;
+}
+
+.measurable:hover > .size-y,
+.measurable:hover > .size-x {
+  display: flex;
+}
+
+.size-y,
+.size-x {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: white;
+  border-radius: 0 0 10px 10px;
+  padding: 0px 4px 2px;
+}
+
+
+.size-y {
+  left: 0;
+  top: 50%;
+  transform-origin: top left;
+  transform: rotateZ(-90deg) translate(-50%, 0);
+}
+
+.size-x {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

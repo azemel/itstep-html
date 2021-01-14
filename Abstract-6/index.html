@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+
+    body {
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+
+    }
+
+    .div1, .div2, .div3, .div4 {
+      height: 200px;
+    }
+
+    .div1 {
+      top: 10px;
+      background-color: coral;
+      width: 50%;
+      z-index: 1000;
+    }
+    .div2 {
+      top: 20px;
+      background-color: red;
+      width: 40%;
+      z-index: 2;
+    }
+    .div3 {
+      top: 30px;
+      background-color: green;
+      width: 30%;
+    }
+
+    .div4 {
+      top: 40px;
+      background-color: violet;
+      width: 20%; 
+      z-index: 3;  
+      margin: 20px auto;
+    }
+
+    
+    .container-2 {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: hsla(0, 0%, 0%, 0.6);
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container-1">
+    <div class="div1">
+      asdf
+    </div>  
+
+    <div class="div2">
+      asdf
+    </div>  
+    
+    <div class="div3">
+      asdf
+    </div>
+  </div>
+  
+  
+  <div class="container-2">
+    <div class="div4">
+      asdf
+    </div>  
+  </div>  
+</body>
+</html>
+
+
