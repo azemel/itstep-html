@@ -33,5 +33,5 @@
     <td>translate, rotateZ, scale</td>
     <td>translate, rotateZ, scale, rotateX/rotateY</td>
     <td>translate, rotateZ, scale, rotateX/rotateY</td>
-  <tr/>
+  </tr>
 </table>
