@@ -210,45 +210,40 @@
 
   <tr>
     <td valign="top">14</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/Cgu1I_aZX8maLCHqsNSH57uF8_7Tl2IMccH8dlbiI13qzMbeA0ynRvZtzWYSolwZ._WuP8JzVhs6TpoXW?startTime=1610542514000">13.01</a></td>
+    <td valign="top"><a>CSS9</a>
       <ul>
-        <li>outline, shadow</li>
-        <li>Column</li>
-        <li>Grid</li>
-        <li>Filter</li>
         <li>Transform</li>
-        <li>Transition, animation</li>
-        <li>Misc: counter, word-wrap, text-overflow...</li>
-        <li>Стилизация форм</li>
-        <li>Layout: Табличный, float, flex, grid.</li>
-        <li>Grid system</li>
-        <li>...</li>   
       </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-6">HW-5</a>: Сверстать картину Малевича
+    </td>
+    <td valign="top">
+      <a href="./EX-6">EX-6</a>: Сверстать кнопки</td>
   </tr>  
 
   <tr>
     <td valign="top">15</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
-      <ul></ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/8CFWEdXsLkrZmB95yJrodh_PNap8eSBzSFAC75OqVWjOu5bgCllR38D2KUiR358P.DqN7hF6QwdHLiuzT?startTime=1610628867000">14.01<a/></td>
+    <td valign="top"><a>CSS10</a>
+      <ul>
+        <li>Transition</li>
+      </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">Найти и презентовать на уроке "css-трюка - интересный, необычный или нестандартный пример использования css</td>
+    <td valign="top"><a href="./EX-6">EX-6</a>: Сверстать кнопки с transition</td>
   </tr>  
   
   <tr>
     <td valign="top">16</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 12</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/ydtp6gQLScxYCSkp_g_WLEYsQVQHWOyc-GLvQ9k_8PB8QDz6pRwqKHeBjm1fFmXU.NYTqI4xBNsC5hcI3?startTime=1610974772000">18.01</a></td>
+    <td valign="top"><a>CSS11</a>
       <ul>
-        <li>Media queries. Адаптивная верстка</li>
+        <li>Animation</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">---</td>
     <td valign="top"></td>
   </tr>  
 
@@ -257,6 +252,14 @@
     <td valign="top"></td>
     <td valign="top"><a>Bootstrap ?</a>
       <ul>
+        <li>Grid</li>
+        <li>Filter</li>
+        <li>Misc: counter</li>
+        <li>Стилизация форм</li>
+        <li>Layout: Табличный, float, flex, grid.</li>
+        <li>Grid system</li>
+        <li>...</li>   
+        <li>Media queries. Адаптивная верстка</li>
       </ul>
     </td>
     <td valign="top"></td>

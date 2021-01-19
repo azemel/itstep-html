@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .clock {
+      width: 200px;
+      height: 200px;
+      background-color: hsl(0, 0%, 80%);
+      position: relative;
+    }
+
+    .hand {
+      position: absolute;
+      height: 100px;
+      width: 10px;
+      top: 0;
+      left: 50%;
+
+      background-color: black;
+
+      transform: translateX(-50%);
+      transform-origin: bottom center;
+
+      animation: clock 60 s steps(60) infinite;
+    }
+
+
+
+    @keyframes clock {
+      
+      0% {
+        transform: translateX(-50%) rotateZ(0);
+      }
+
+
+      100% {
+        transform: translateX(-50%) rotateZ(360deg);
+      }
+
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+  <div class="clock">
+    <div class="hand"></div>
+  </div>
+</body>
+</html>

@@ -147,7 +147,7 @@ body {
 .corner {
   background: linear-gradient(-45deg, transparent 1.76em, hsl(345, 100%, 85%) 1.76em, hsl(190, 100%, 85%));
   transition: background 2s;
-  background-size: 100% 100% ;
+  background-size: 100% 100%;
 }
   .corner .button-caption {  
     padding-right: 2.5em;
@@ -157,7 +157,7 @@ body {
     /* background: linear-gradient(-45deg, transparent 1.76em, hsl(345, 90%, 50%) 1.76em, hsl(190, 90%, 50%)); */
     color: white;
 
-    background-size: 120% 100% ;
+    background-size: 120% 100%;
   }
 
 .diamond {
