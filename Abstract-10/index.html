@@ -16,15 +16,17 @@
     }
 
     .clock {
-      width: 200px;
-      height: 200px;
+      width: 600px;
+      height: 600px;
       background-color: hsl(0, 0%, 80%);
       position: relative;
+
+      border-radius: 50%;
     }
 
     .hand {
       position: absolute;
-      height: 100px;
+      height: 50%;
       width: 10px;
       top: 0;
       left: 50%;
@@ -34,23 +36,211 @@
       transform: translateX(-50%);
       transform-origin: bottom center;
 
-      animation: clock 60 s steps(60) infinite;
+      animation: clock 60s steps(60) infinite;
     }
 
 
+    .notches, .digits {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+
+    .notch {
+      width: 6px;
+      height: 30px;
+      background-color: hsl(0, 0%, 40%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform-origin: top center;
+    }
+
+    .notches .notch:nth-child(1) {
+      transform: translate(-50%, 0) rotateZ(0) translateY(-300px)
+    } 
+    .notches .notch:nth-child(2) {
+      transform: translate(-50%, 0) rotateZ(30deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(3) {
+      transform: translate(-50%, 0) rotateZ(60deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(4) {
+      transform: translate(-50%, 0) rotateZ(90deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(5) {
+      transform: translate(-50%, 0) rotateZ(120deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(6) {
+      transform: translate(-50%, 0) rotateZ(150deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(7) {
+      transform: translate(-50%, 0) rotateZ(180deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(8) {
+      transform: translate(-50%, 0) rotateZ(210deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(9) {
+      transform: translate(-50%, 0) rotateZ(240deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(10) {
+      transform: translate(-50%, 0) rotateZ(270deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(11) {
+      transform: translate(-50%, 0) rotateZ(300deg) translateY(-300px)
+    } 
+    .notches .notch:nth-child(12) {
+      transform: translate(-50%, 0) rotateZ(330deg) translateY(-300px)
+    } 
+
+
+    .digit {
+      /* width: 6px;
+      height: 30px; */
+      /* background-color: hsl(0, 0%, 40%); */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font: 600 24px Roboto, sans-serif;
+
+
+      /* transform-origin: top center; */
+    }
+
+    .digits .digit:nth-child(1) {
+      transform: translate(-50%, -50%) rotateZ(0deg) translateY(-250px) rotateZ(-0deg)
+    } 
+      .digits .digit:nth-child(1  )::before {
+        content: '12';
+        display: block;
+        animation: scale 60s steps(60) 55s infinite;
+      }
+
+    .digits .digit:nth-child(2) {
+      transform: translate(-50%, -50%) rotateZ(30deg) translateY(-250px) rotateZ(-30deg);
+    } 
+      .digits .digit:nth-child(2)::before {
+        content: '1';
+        display: block;
+        animation: scale 60s steps(60) 0s infinite;
+      }
+
+    .digits .digit:nth-child(3) {
+      transform: translate(-50%, -50%) rotateZ(60deg) translateY(-250px) rotateZ(-60deg)
+    } 
+      .digits .digit:nth-child(3)::before {
+        content: '2';
+        display: block;
+        animation: scale 60s steps(60) 5s infinite;
+      }
+
+    .digits .digit:nth-child(4) {
+      transform: translate(-50%, -50%) rotateZ(90deg) translateY(-250px) rotateZ(-90deg)
+    } 
+      .digits .digit:nth-child(4)::before {
+        content: '3';
+        display: block;
+        animation: scale 60s steps(60) 10s infinite;
+      }
+    .digits .digit:nth-child(5) {
+      transform: translate(-50%, -50%) rotateZ(120deg) translateY(-250px) rotateZ(-120deg)
+    } 
+      .digits .digit:nth-child(5)::before {
+        content: '4';
+        display: block;
+        animation: scale 60s steps(60) 15s infinite;
+      }
+    .digits .digit:nth-child(6) {
+      transform: translate(-50%, -50%) rotateZ(150deg) translateY(-250px) rotateZ(-150deg)
+    } 
+      .digits .digit:nth-child(6)::before {
+        content: '5';
+        display: block;
+        animation: scale 60s steps(60) 20s infinite;
+      }
+    .digits .digit:nth-child(7) {
+      transform: translate(-50%, -50%) rotateZ(180deg) translateY(-250px) rotateZ(-180deg)
+    } 
+      .digits .digit:nth-child(7)::before {
+        content: '6';
+        display: block;
+        animation: scale 60s steps(60) 25s infinite;
+      }
+    .digits .digit:nth-child(8) {
+      transform: translate(-50%, -50%) rotateZ(210deg) translateY(-250px) rotateZ(-210deg)
+    } 
+      .digits .digit:nth-child(8)::before {
+        content: '7';
+        display: block;
+        animation: scale 60s steps(60) 30s infinite;
+      }
+    .digits .digit:nth-child(9) {
+      transform: translate(-50%, -50%) rotateZ(240deg) translateY(-250px) rotateZ(-240deg)
+    } 
+      .digits .digit:nth-child(9)::before {
+        content: '8';
+        display: block;
+        animation: scale 60s steps(60) 35s infinite;
+      }
+    .digits .digit:nth-child(10) {
+      transform: translate(-50%, -50%) rotateZ(270deg) translateY(-250px) rotateZ(-270deg)
+    } 
+      .digits .digit:nth-child(10)::before {
+        content: '9';
+        display: block;
+        animation: scale 60s steps(60) 40s infinite;
+      }
+    .digits .digit:nth-child(11) {
+      transform: translate(-50%, -50%) rotateZ(300deg) translateY(-250px) rotateZ(-300deg)
+    } 
+      .digits .digit:nth-child(11)::before {
+        content: '10';
+        display: block;
+        animation: scale 60s steps(60) 45s infinite;
+      }
+    .digits .digit:nth-child(12) {
+      transform: translate(-50%, -50%) rotateZ(330deg) translateY(-250px) rotateZ(-330deg)
+    } 
+      .digits .digit:nth-child(12)::before {
+        content: '11';
+        display: block;
+        animation: scale 60s steps(60) 50s infinite;
+      }
 
     @keyframes clock {
-      
       0% {
         transform: translateX(-50%) rotateZ(0);
       }
 
-
       100% {
         transform: translateX(-50%) rotateZ(360deg);
       }
-
     }
+
+    @keyframes scale {
+      0% {
+        transform: scale(1);
+        color: balck;
+      }
+
+      8.33% {
+        transform: scale(2);
+        color: red;
+      }
+
+      16.66% {
+        transform: scale(1);
+        color: black;
+      }
+
+      100% {
+        transform: scale(1); 
+        color: black;
+      }
+    } 
 
 
   </style>
@@ -59,6 +249,37 @@
 
 <body>
   <div class="clock">
+
+    <div class="notches">
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+      <div class="notch"></div>
+    </div>
+
+    <div class="digits">
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+      <div class="digit"></div>
+    </div>
+
     <div class="hand"></div>
   </div>
 </body>
