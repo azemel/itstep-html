@@ -1,0 +1,58 @@
+Блок элемент модификатор
+
+1. Селекторы - только классы 
+=> 2. Специфичность всегда одна
+
+
+.block
+
+.block__element
+
+.block_modifier
+.block__element_modifer
+
+
+.header
+.header__logo
+
+.nav
+.nav__item
+.nav__link  != .nav__item__link
+
+
+
+.user
+
+.user__right-column
+.user__avatar
+.user__name
+.user__date-of-birth
+
+
+<div class="user">
+
+  <div class="user__name"></div>
+  <div class="user__right-column>
+    <div class="user__avatar></div>
+    <div class="user__date-of-birth"></div>
+  </div>
+
+</div>
+
+
+.user__avatar_color
+
+.user__avatar_black-and-white
+
+
+.button
+
+
+.button_big
+
+.button_medium
+
+
+.button_size_big
+.button_size_medium
+

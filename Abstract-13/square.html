@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    table {
+      border-spacing: 0;  
+    }
+
+    td {
+      padding: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    td.red {
+      background-color: red;
+    }
+
+    .b {
+      width: 100px;
+      height: 100px;
+    }
+
+
+    .a div {
+      background-color: blue;
+    }
+    
+    div .b {
+      background-color: red;
+    }
+
+  </style>
+
+  <script>
+    // window.addEventListener("load", () => {
+    //   const table = document.createElement("table");
+    //   for(let i = 0; i < 100; i++) {
+    //     const tr = document.createElement("tr");
+    //     for(let j = 0; j < 100 ; j++) {
+    //       const td = document.createElement("td");
+    //       i >= 50 && j >= 50 && (td.className = "red");
+    //       tr.appendChild(td);
+    //     }
+    //     table.appendChild(tr);
+    //   }
+    //   document.body.appendChild(table);
+    // });
+  </script>
+</head>
+<body>
+  <div class="a">
+    <div class="b">
+
+    </div>
+  </div>
+</body>
+</html>

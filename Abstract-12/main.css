@@ -8,7 +8,8 @@ html {
   height: 100%;
 }
 
-body {
+
+.page {
   min-height: 100%;
 
   display: flex;
@@ -18,10 +19,21 @@ body {
   justify-content: flex-start;
 
   font: 300 16px Roboto, sans-serif;
+  
+  background-color: #2b3439;
+}
+
+  .page__header {
+    flex: 0 0 auto;
+  }
+
+.fancy-border {
+  background: linear-gradient(to right, red, blue);
+  background-clip: border-box;
+  padding: 5px;
 }
 
 .header {
-  flex: 0 0 auto;
   background-color: #2a2f33;
 
   display: flex;
@@ -33,58 +45,112 @@ body {
   padding: 0 25px;
 }
 
-  .logo {
+  .header__logo {
+    /*flex: 0 1 auto;*/
+
+    padding: 20px 0;
     font-size: 40px;
     font-weight: 800;
     color: #edf1f2;
-
-    padding: 20px 0;
   }
 
-  .status {
+  .header__status {
     color: #77ac98;
     text-transform: uppercase;
     padding: 0 25px;
   }
 
-  .nav {
+  .header__nav {
     margin-left: auto;
-
     align-self: stretch;
-
-    display: flex;
-    flex-direction: row;
-
-    align-items: stretch;
-    justify-content: flex-start;
   }
 
-  .nav-item {
+
+.page__body {
+  flex: 1 0 auto;
+}
+
+.body {
+
+}
+
+.footer {
+
+  background-color: #2a2f33;
+}
+
+.footer__nav {
+  padding: 20px;
+}
+
+
+/* 
+.nav {
+} */
+
+.nav_horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+
+.nav_vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.nav__item {
+}
+
+  .nav__item_horizontal {
     padding: 0 20px;
   }
 
-  .nav-link {
-    color: #edf1f2;
-    text-decoration: none;
-    font-weight: 500;
-    
-    display: flex;
-
-    flex-direction: row;
-    align-items: center;
-    
-    
-    border-bottom: 4px solid transparent;
-    height: 100%;
-
+  .nav__item_vertical {
+    padding: 10px 0 0;
   }
 
-    .nav-link:hover {
-      border-bottom-color: #b64c5c;
-    }
+.nav__link {
+  color: #edf1f2;
+  text-decoration: none;
+  font-weight: 500;
+  
+  display: flex;
+
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 4px solid;
+
+  height: 100%;
+}
+
+  .nav__link_default {
+    border-bottom-color: transparent;
+  }
+
+  .nav__link_selected {
+    border-bottom-color: #064c5c;
+  }
+
+  .nav__link:hover {
+    border-bottom-color: #b64c5c;
+  }
 
 
-.body {
-  flex: 1 0 auto;
-  background-color: #2b3439;
+.nav {
+
+}
+
+.header .nav {
+
+
+}
+
+
+.footer .nav {
+
 }

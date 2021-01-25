@@ -249,42 +249,37 @@
 
   <tr>
     <td valign="top">17</td>
-    <td valign="top"></td>
-    <td valign="top"><a>Bootstrap ?</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/KykpSxJtw7bpOlDgt-_78_yNgOWm0_pZc1-d5dJXY5IjXW5oG5lQgpQ7iS62-Kk5.hOnuLHbilaAcP0ug?startTime=1611147401000">20.01</a></td>
+    <td valign="top"><a>СSS12</a>
       <ul>
         <li>Grid</li>
-        <li>Filter</li>
-        <li>Misc: counter</li>
-        <li>Стилизация форм</li>
-        <li>Layout: Табличный, float, flex, grid.</li>
-        <li>Grid system</li>
-        <li>...</li>   
-        <li>Media queries. Адаптивная верстка</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./HW-7">HW-7</a>: Сверастать с помощью grid как на картинке</td>
     <td valign="top"></td>
   </tr>  
 
   <tr>
     <td valign="top">18</td>
-    <td valign="top"></td>
-    <td valign="top"><a>Препроцессоры. SASS ?</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/y-y0to0iUCFt6s7cN2a2K05Z6zKCirc_4Iwr4zs72B9XByCJTY_65jzyguY58WS2.ssV4Vp8rE3WUksBp?startTime=1611233354000">21.01</a></td>
+    <td valign="top"><a>CSS13</a>
       <ul>
+        <li>Grid: продолжение</li>
+        <li>Filter</li>
+        <li>Misc: counter</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./HW-7">HW-7</a>: Сверастать с помощью grid как на картинке</td>
     <td valign="top"></td>
   </tr>  
 
   <tr>
     <td valign="top">19</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top">25.01</td>
+    <td valign="top">
+      <a>BEM</a>
     </td>
-    <td valign="top"></td>
+    <td valign="top"><a href="https://ru.bem.info/methodology/">Прочитать документацию БЕМ</a></td>
     <td valign="top"></td>
   </tr>  
   
