@@ -275,7 +275,7 @@
 
   <tr>
     <td valign="top">19</td>
-    <td valign="top">25.01</td>
+    <td valign="top"><a href="https://zoom.us/rec/share/W8dlM9Ijz_ASXy-tylwBYcnYb9ywzwAopIzaI6zda-crWPP61EVeDKh8NorrB9fr.ay1W2pNiFoT1H7Jx?startTime=1611579567000">25.01</a></td>
     <td valign="top">
       <a>BEM</a>
     </td>
@@ -285,20 +285,18 @@
   
   <tr>
     <td valign="top">20</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/M_O1sfFUUlY8B4Y6iCSFDeTzF9e0TbUmYWXhgA1lc3JCpivvxsxtxEjKvMFPn-Hj.mpbN3Nko4ipcFoK3?startTime=1611752143000">27.01</a></td>
+    <td valign="top">
+      <a>Верстка 1</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">21</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/WokNDkWJLkeJrVliy54vFUOWSsXuyM_25ycl6VVXlI1Qr1yhbWnDYSGM6zT4Mw6U.qvxjMcf-UDCAJs4o?startTime=1611838190000">28.01</a></td>
+    <td valign="top">
+      <a>Верстка 2</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>

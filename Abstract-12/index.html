@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="form.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 </head>
-<body class="page">
-
-
-  <div class="page__header">
-
-    <div class="fancy-border">
-      <div class="header">
+<body class="page page_has-stick-header">
+  <div class="page__header-placeholder"></div>
+  <div class="page__header page__header_sticky">
+        <!-- 
+      <div class="header header_logo-right">
         <div class="header__logo">Argus</div>
         <div class="header__status">online</div>
+
+        <div class="header__space"></div>
 
         <div class="header__nav nav nav_horizontal">
           <div class="nav__item nav__item_horizontal">
@@ -25,35 +27,502 @@
           <div class="nav__item nav__item_horizontal"><a href="" class="nav__link nav__link_default">Стоп-нарушения</a></div>
           <div class="nav__item nav__item_horizontal"><a href="" class="nav__link nav__link_default">Шлагбаумы</a></div>
         </div>
+      </div> -->
+
+      
+      <div class="header header_logo-center">
+        <!-- <div class="header__status">online</div> -->
+
+        <!-- <div class="header__space"></div> -->
+
+        <!-- <div class="header__nav nav"> -->
+        <div class="header__left nav nav_horizontal">
+          <div class="nav__item nav__item_horizontal">
+            <a href="" class="nav__link nav__link_selected">Терминалы</a>
+          </div>
+          <div class="nav__item nav__item_horizontal">
+            <a href="" class="nav__link nav__link_default">Нарушения</a>
+          </div>
+        </div>
+
+        <div class="header__logo">Argus</div>
+
+        <div class="header__right nav nav_horizontal">
+          <div class="nav__item nav__item_horizontal">
+            <a href="" class="nav__link nav__link_default">Стоп-нарушения</a>
+          </div>
+          <div class="nav__item nav__item_horizontal">
+            <a href="" class="nav__link nav__link_default">Шлагбаумы</a>
+          </div>
+        </div>
+
+        <div class="header__user">
+          <a href="" class="user">
+            <i class="user__icon icon icon_user"></i>
+            <span class="user__name">Username</span>
+          </a>
+        </div>
+
       </div>
-    </div>
+
   </div>
 
 
-  <div class="page__body body body_aside-left">
+  <div class="page__body">
+
+    <div class="body body_no-aside">
+
+      <div class="body__aside">
+        
+        <div class="aside">
+          
+          
+          <div class="aside__item">
+            <div class="aside__title">
+              <a href="" class="aside__link">Терминалы</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Алматы</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Караганде</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div class="aside__item">
+            
+            <div class="aside__title">
+              <a href="" class="aside__link">Все события</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2020</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2021</a> 
+                  <span class="aside__chevron">&gt;</span>
+                </div>
+
+
+                <div class="aside__list">
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">январь</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+                  </div>
+              
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">февраль</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
     
-    <div class="body__aside fancy-border">
-      <div class="aside">
-        <div class="aside__item"><a href="" class="aside__link">Терминалы</a></div>
-        <div class="aside__item"><a href="" class="aside__link">Все события</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="aside__item">
+            <div class="aside__title">
+              <a href="" class="aside__link">Терминалы</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Алматы</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Караганде</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="aside__item">
+            
+            <div class="aside__title">
+              <a href="" class="aside__link">Все события</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2020</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2021</a> 
+                  <span class="aside__chevron">&gt;</span>
+                </div>
+
+
+                <div class="aside__list">
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">январь</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+                  </div>
+              
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">февраль</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="aside__item">
+            <div class="aside__title">
+              <a href="" class="aside__link">Терминалы</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Алматы</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Караганде</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="aside__item">
+            
+            <div class="aside__title">
+              <a href="" class="aside__link">Все события</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2020</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2021</a> 
+                  <span class="aside__chevron">&gt;</span>
+                </div>
+
+
+                <div class="aside__list">
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">январь</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+                  </div>
+              
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">февраль</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+          <div class="aside__item">
+            <div class="aside__title">
+              <a href="" class="aside__link">Терминалы</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Алматы</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">Терминалы в Караганде</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="aside__item">
+            
+            <div class="aside__title">
+              <a href="" class="aside__link">Все события</a> 
+              <span class="aside__chevron">&gt;</span>
+            </div>
+
+
+
+            <div class="aside__list">
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2020</a> 
+                  <!-- <span class="aside__chevron">&gt;</span> -->
+                </div>
+              </div>
+          
+              <div class="aside__item">
+                <div class="aside__title">
+                  <a href="" class="aside__link">2021</a> 
+                  <span class="aside__chevron">&gt;</span>
+                </div>
+
+
+                <div class="aside__list">
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">январь</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+                  </div>
+              
+                  <div class="aside__item">
+                    <div class="aside__title">
+                      <a href="" class="aside__link">февраль</a> 
+                      <!-- <span class="aside__chevron">&gt;</span> -->
+                    </div>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="body__space"></div>
+
+      <div class="body__main">
+      
+        <form class="form" autocomplete="off">
+
+          <label class="form__field">
+            <div class="form__label">
+              Имя: 
+            </div>
+            <div class="form__input">
+              <input type="text" class="textbox" name="name"/>
+            </div>
+          </label>
+
+          <label class="form__field">
+            <div class="form__label">
+              Email: 
+            </div>
+            <div class="form__input">
+              <input type="email" class="textbox" name="email"/>
+            </div>
+          </label>
+
+
+          <label class="form__field">
+            <div class="form__label">
+              Описание: 
+            </div>
+            <div class="form__input">
+              <textarea class="textbox textbox_multiline" name="description"></textarea>
+            </div>
+          </label>
+
+          <label class="form__field">
+            <div class="form__label">
+              Список: 
+            </div>
+            <div class="form__input">
+              <select class="select" name="description">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </label>
+          
+          <label class="form__field">
+            <div class="form__label"></div>
+            <div class="form__input">
+
+              <div class="checkbox">
+                <input type="checkbox" class="checkbox__input" name="checkbox"/> 
+                <div class="checkbox__icon"></div>
+                <div class="checkbox__text">Чекбокс</div>
+              </div>
+
+            </div>
+          </label>
+
+          
+          <label class="form__field">
+            <div class="form__label"></div>
+            <div class="form__input">
+              <div class="button button_default file-picker">
+                <input type="file" class="file-picker__input" name="file"/> 
+                Выбрать файл
+              </div>
+            </div>
+          </label>
+
+          <label class="form__field">
+            <div class="form__label"></div>
+            <div class="form__input">
+              <button type="button" class="button button_default">Кнопка</button>
+            </div>
+          </label>
+
+
+          <label class="form__field">
+            <div class="form__label"></div>
+            <div class="form__input">
+              <button type="submit" class="button button_main">Отправить</button>
+            </div>
+          </label>
+
+        </form>
+
+
+        <form class="form form_inline" autocomplete="off">
+          <label class="form__field">
+            <div class="form__label">
+              Имя: 
+            </div>
+            <div class="form__input">
+              <input type="text" class="textbox" name="name"/>
+            </div>
+          </label>
+
+          <label class="form__field">
+            <div class="form__label"></div>
+            <div class="form__input">
+              <button type="button" class="button button_default">Кнопка</button>
+            </div>
+          </label>
+
+          <label class="form__field">
+            <div class="form__label">
+              Описание: 
+            </div>
+            <div class="form__input">
+              <textarea class="textbox textbox_multiline" name="description" rows="1"></textarea>
+            </div>
+          </label>
+
+          
+        </form>
+
       </div>
     </div>
-    <div class="body__main">
-      sadfsadf
+
+    <div class="sticky-button">  
+      <a href="" class="user">
+        <i class="user__icon icon icon_user"></i>
+        <span class="user__name">Username</span>
+      </a>
     </div>
+    
+
   </div>
 
-  <div class="page__footer footer nav_vertical">
+  <div class="page__footer footer ">
     
-    <div class="footer__nav nav">
-      <div class="nav__item nav__item_vertical">
-        <a href="" class="nav__link nav__link_selected">Терминалы</a>
+    <div class="footer__content">
+      <div class="footer__nav nav nav_vertical">
+        <div class="nav__item nav__item_vertical">
+          <a href="" class="nav__link nav__link_selected">Терминалы</a>
+        </div>
+        <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Нарушения</a></div>
+        <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Стоп-нарушения</a></div>
+        <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Шлагбаумы</a></div>
       </div>
-      <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Нарушения</a></div>
-      <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Стоп-нарушения</a></div>
-      <div class="nav__item nav__item_vertical"><a href="" class="nav__link nav__link_default">Шлагбаумы</a></div>
-    </div>
 
+      <div class="footer__contacts contacts">
+        <div class="contacts__item">Телефон: +8 800 12312312</div>
+        <div class="contacts__item">Адрес: ул. фывафыва</div>
+        <div class="contacts__item">Инстаграм</div>
+      </div>
+
+      <div class="footer__third"></div>
+
+    </div>
   </div>
 
 </body>
