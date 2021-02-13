@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    .block {
+      width: 100%;  
+      padding: 20px;
+    }
+
+    .block__element {
+      background-color: black;
+      margin: 20px;
+      height: 80px;
+    }
+
+    @media (max-width: 500px) {
+
+      .block {
+        background-color: red;
+
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+
+
+    @media (min-width: 500px) and (max-width: 1000px) {
+      .block {
+        background-color: yellow;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+   
+
+      .block__element {
+        flex: 1 0 0;
+      }
+
+      
+      .block__line-break {
+        flex: 0 0 100%;
+      }
+
+    }
+
+
+    @media (min-width: 1000px) {
+      .block {
+        background-color: green;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      
+      .block__element {
+        flex: 0 0 80px;
+      }
+
+      
+      .block__line-break {
+        flex: 1 0 0;
+      }
+
+/* 
+      .block__element_first {
+        flex: 1 0 0;
+      } */
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="block">
+
+    <div class="block__element block__element_first"></div>
+    
+    <div class="block__line-break"></div>
+
+    <div class="block__element"></div>
+    <div class="block__element"></div>
+    <div class="block__element"></div>
+  </div>
+
+</body>
+</html>

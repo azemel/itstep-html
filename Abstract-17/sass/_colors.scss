@@ -1,0 +1,104 @@
+
+@mixin flex-row($align: center) {
+  display: flex;
+  flex-direction: row;
+  align-items: $align;
+}
+
+.cards {
+  @include flex-row(flex-start);
+  justify-content: center;
+}
+
+.gallery {
+  @include flex-row;
+  border: 1px solid;
+}
+
+
+@mixin gradient($direction, $color1, $step: 5%, $func: lighten) {
+  $color2: lighten($color1, $step);
+  $color3: lighten($color2, $step);
+  $color4: lighten($color3, $step);  
+
+  @if ($func == saturate) {
+    $color2: saturate($color1, $step);
+    $color3: saturate($color2, $step);
+    $color4: saturate($color3, $step); 
+  } @else if ($func == hue) {   
+    $color2: adjust-hue($color1, $step);
+    $color3: adjust-hue($color2, $step);
+    $color4: adjust-hue($color3, $step); 
+  }
+
+  background-image: linear-gradient(
+    $direction,
+    $color1,
+    $color2,
+    $color3,
+    $color4
+  )
+}
+
+
+.card {
+  @include gradient(10px, green, 50, hue)
+
+}
+
+
+.card2 {
+  @include gradient(90deg, hsl(240, 10%, 50%), 10%, saturate)
+}
+
+
+@mixin proportional-height($percentage: 100%) {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    padding-bottom: $percentage;
+  }
+}
+
+.image-card {
+  @include proportional-height;
+}
+
+
+a > #dadf ~ .image-card-2 {
+  @include proportional-height(30%);
+}
+
+
+@mixin colored-version($name, $color) {
+  &_#{$name} {
+    color: $color;
+  }
+}
+
+
+.text {
+  color: black;
+
+  @include colored-version(red, red);
+
+  @include colored-version(green, hsl(100, 40%, 60%));
+}
+
+
+
+@mixin font($font) {
+  font: $font
+}
+
+.block {
+  @include font(400 (10px / 10px)  'Roboto');
+}
+
+.grid {
+  padding: 1 / span 1;
+}
+

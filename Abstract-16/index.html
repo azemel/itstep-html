@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+  <style>
+/* 
+    [class^="col-"] {
+      background-color: rgba(39,41,43,0.03);
+      border: 1px solid rgba(39,41,43,0.1);
+    } */
+/* 
+    html {
+      font-size: 30px;
+    } */
+
+    body {
+      font: 400 16px 'Roboto';
+    }
+
+    .col {
+      flex: 1 0 0;
+      order: 1;
+    }
+    
+
+    .intro {
+      height: 80vh;
+    }
+
+    .intro-message {
+      max-width: 400px;
+    }
+
+    .intro-image {  
+      background-image: url('./image1.jpg');
+      background-size: cover;
+    }
+
+    .first-line-white::first-line {
+      color: white;
+      text-transform: uppercase;
+    }
+
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container-fluid">
+    <div class="row intro">
+
+      <div class="col-sm-8 col-md-6 d-flex align-items-center">
+        <div class="intro-message ms-auto p-5">
+          <div class="display-2 first-line-white"><strong>Creative <br/> Design Agency</strong></div> 
+          <div class="mt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-6 intro-image"></div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>

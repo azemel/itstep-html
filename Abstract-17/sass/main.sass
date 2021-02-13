@@ -1,0 +1,70 @@
+@import _colors
+
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html 
+  height: 100%
+  background:
+    color: red 
+    size: 100px
+    position: fixed
+
+  border:
+    width: 2px 3px
+    style: solid
+    color: red black
+
+.class1
+  padding: 30px
+
+
+.class2
+  padding-left: 10px
+  padding-right: 10px
+  padding-top: 2px 
+  padding-bottom: 4px
+  padding-left: 3px
+
+.kcolb 
+  color: red
+  
+  &__elemnt 
+    color: blue
+
+  &__qwerwqer 
+    color: blue
+
+    &::before
+      color: green
+      
+  &_mod 
+
+    & .qweqwe .block__elment 
+      color: white
+
+a 
+  color: green
+
+
+
+
+=flex-row 
+  display: flex
+  flex-direction: row
+
+
+
+.cards 
+  +flex-row
+  justify-content: center
+
+
+.gallery
+  +flex-row
+  border: 1px solid
+
+.grid 
+  grid-area: 1 / 2

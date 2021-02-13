@@ -31,6 +31,7 @@ a {
   .page__header-placeholder, .page__header {
     flex: 0 0 auto;
   }
+
     .page__header_sticky {
       position: fixed;
       top: 0;

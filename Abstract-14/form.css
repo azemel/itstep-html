@@ -1,0 +1,54 @@
+
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  
+  border: 0 none;
+  background-color: transparent;
+
+
+  width: 100%;
+}
+
+ .button:focus {
+    outline: 0 none;
+  }
+
+
+.button {
+  display: block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+  .button_default {
+    position: relative;
+    color: black;
+
+    filter: drop-shadow(0 0 2px var(--glow-bright)) drop-shadow(0 0 10px var(--glow-dim));
+  }
+    
+    .button_default::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: white;
+      z-index: -1;
+    }
+
+    .button_default::before {
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 8px),
+        calc(100% - 8px) 100%,
+        0 100%
+      );
+      
+    }
+

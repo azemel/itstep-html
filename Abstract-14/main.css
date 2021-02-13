@@ -1,0 +1,550 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.page {
+  position: relative;
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  justify-content: flex-start;
+
+  font: 400 20px 'Yanone Kaffeesatz';
+  
+  background-color: hsl(273, 93%, 11%);
+  background-image: 
+    linear-gradient(to bottom, hsla(269, 94%, 6%, .5), hsla(307, 80%, 33%, .1), hsla(255, 41%, 25%, .5)), 
+    linear-gradient(to right, hsla(269, 94%, 6%, .5), hsla(307, 80%, 33%, .1), hsla(255, 41%, 25%, .5)), 
+    url('./star-bg.webp');
+  background-size: 
+    100% 100%, 
+    100% 100%,
+    fixed
+    100%;
+  background-attachment: 
+    fixed,
+    fixed, 
+    local;
+
+  color: white;
+}
+
+  .page__header {
+    height: 90px;
+  }
+
+    .page__header_sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      background-color: hsla(255, 41%, 5%, .8);
+    }
+    
+    .page__header_intro {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+
+  .page__poster {
+    position: relative;
+    z-index: 3;
+    color: white;
+  }
+
+  .page__section {
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+    .page__section_narrow {
+      max-width: 1200px;
+    }
+
+    .page__section_full {
+      width: 100%;
+    }
+
+
+  .page__body {
+    flex: 1 0 auto;
+    margin: 0 auto;
+  }
+
+
+
+.poster {
+  height: 80vh;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  clip-path: ellipse(90.5% 60% at 50% 40%);
+}
+
+  .poster::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("./space.jpg"), linear-gradient(to bottom, #2a2139 75%, #34294f);
+    z-index: -1;
+    background-size: cover;
+  }
+
+  .poster__logo {
+    font-weight: 900;
+    font-size: 100px;
+    margin: 40px;
+  }
+
+  .poster__description {
+    font-size: 24px;
+  }
+
+.nav {}
+
+  .nav_horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+
+  .nav_vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .nav__item {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+    .nav__item_horizontal {
+      padding: 0 20px;
+    }
+
+    .nav__item_vertical {
+      padding: 10px 0 0;
+    }
+
+  .nav__link {
+    position: relative;
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+
+    height: 80px;
+  }
+
+    .nav__link::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      clip-path: none;
+    }
+
+    .nav__link_selected {
+      color: var(--ink-emphasis);
+    }
+
+    .nav__link_default::before  {
+      background-color: transparent;
+    }
+
+
+    .nav__link_selected::before,
+    .nav__link:hover::before  {
+      transition: .5s;
+      background-color: var(--ink-emphasis);
+      box-shadow: 
+        0 0 40px 2px var(--glow-medium), 
+        0 0 20px 2px var(--glow-medium), 
+        0 0 5px 1px var(--glow-bright);
+      clip-path: polygon(-100% 0px, 200% 0px, 200% calc(100% + 50px), -100% calc(100% + 50px));
+    }
+
+    .nav__icon {
+      padding-right: 6px;
+    }
+
+  
+
+.header {
+  /* background-color: hsl(180, 20%, 70%); */
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding: 0 25px;
+  height: 77px;
+}
+
+  .header__logo {
+    /*flex: 0 1 auto;*/
+
+    padding: 20px 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: hsl(0, 0%, 10%);
+    display: none;
+  }
+
+  .header__status {
+    color: hsl(230, 20%, 40%);
+    text-transform: uppercase;
+    padding: 0 25px;
+  }
+
+  .header__nav {
+    align-self: stretch;
+  }
+
+  .header__space {
+    flex: 1 0 0;
+  }
+
+  .header_logo-left {
+    flex-direction: row;
+  }
+
+
+  .header_logo-right {
+    flex-direction: row-reverse;
+  }
+
+
+  .header_logo-center {
+    position: relative;
+    justify-content: flex-end;
+  }
+
+    .header_logo-center .header__logo {
+      position: absolute;
+      left: 50%;
+
+      transform: translateX(-50%)
+      /* top: 0; */
+    }
+
+    .header__left {
+      position: absolute;
+      right: calc(50% + 52px);
+
+      /* transform: translateX(-52px); */
+    }
+    .header__right {
+      position: absolute;
+      left: calc(50% + 52px);
+      
+    }
+
+.footer {
+  
+  display: flex;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+
+  background-color: hsla(255, 40%, 5%, .7);
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+  .footer__content {
+    display: flex;
+    max-width: 1000px;
+
+    margin: 0 auto;
+  }
+
+  .footer__nav {
+    flex: 1 0 10px;
+    padding: 20px;
+  }
+
+  .footer__contacts {
+    flex: 1 0 10px;
+    padding: 20px;
+  }
+
+  .footer__third {
+    flex: 1 0 10px;
+  }
+
+
+.features-section {
+  padding: 86px 12px;
+  perspective: 400px;
+}
+  .features-section__header {
+    font-size: 50px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-section__list {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .features-section__feature {
+    flex: 2 0 0;
+    margin: 24px;
+  }
+
+    .features-section__feature_left {
+      transform: rotateY(10deg) scaleX(0.9);
+      flex: 1.8 0 0;
+      transform-origin: top right;
+    }
+    
+    .features-section__feature_right {
+      transform: rotateY(-10deg) scaleX(0.9);
+      flex: 1.8 0 0;
+      transform-origin: top left;
+    }
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 28px;
+}
+
+  .feature__icon {
+    height: 48px;
+    width: 48px;
+    margin: 20px 0;
+  }
+  .feature__title {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: 900;
+  }
+
+  .feature__description {
+    color: hsl(0, 0%, 80%)
+  }
+
+
+.planets-section {
+  padding: 86px 0;
+}
+
+  .planets-section__header {
+    font-size: 50px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+
+.planets {
+  position: relative
+}
+
+  .planets__radio {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    opacity: 0;
+  }
+
+  .planets__picker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    transform: translateX(-80px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .planets__button {
+    display: block;
+    height: 80px;
+    width: 160px;
+    margin: 20px 0px;
+    transition: height .2s ease-out, transform .2s ease-out, opacity .1s ease-out;
+  }
+
+    .planets__button:hover {
+      transform: translateX(20px);
+    }
+
+
+  .planets__posters {  
+    height: 90vh;
+    position: relative;
+    z-index: 1;
+
+    clip-path: ellipse(80.5% 50% at 50% 50%);
+  }
+
+  .planets__posters::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: 
+      linear-gradient(to bottom, hsla(269, 94%, 6%, .5), transparent 10%, transparent 90%, hsla(255, 41%, 25%, .5)), 
+      linear-gradient(to right, hsla(269, 94%, 6%, .8), transparent 20%, transparent 80%, hsla(255, 41%, 25%, .5));
+  }
+
+  .planets__poster {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: opacity .3s ease-out;
+    opacity: 0;
+  }
+
+  .planets__info {
+    position: absolute;
+    top: 20vh;
+    right: 0;
+    z-index: 1;
+    transition: opacity .3s ease-out;
+    width: 50%;
+    max-width: 520px;
+    opacity: 0;
+  }
+
+  .planet-info__title {
+    margin: 25px 8px 15px;
+    font-size: 34px;
+    font-weight: 900;
+  }
+
+  .planet-info__stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--ink-emphasis);
+    border-top: 1px solid var(--ink-emphasis);
+    padding: 8px 0 0;
+  }
+
+  .planet-info__stat {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding: 8px;
+  }
+
+  .planet-info__stat-icon {
+    font-weight: 300;
+    width: 30px;
+    text-align: center;
+    margin-right: 10px;
+    color: var(--ink-emphasis);
+    text-shadow: 0 0 .2em var(--glow-medium), 0 0 .5em var(--glow-bright);
+    /* border-left: 1px solid var(--ink-emphasis); */
+  }
+
+  .planet-info__stat-number {
+    font-weight: 300;
+  }
+
+  .planets__description {
+    padding: 30px 8px 20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(208, 20%, 90%);
+  }
+
+  .planets__poster[data-planet="winter"],
+  .planets__button[data-planet="winter"]::before {
+    background: center/cover url('planet-winter.jpg');
+  }
+  .planets__poster[data-planet="islands"],
+  .planets__button[data-planet="islands"]::before {
+    background: center/cover url('planet-islands.jpg');
+  }
+  .planets__poster[data-planet="asgard"],
+  .planets__button[data-planet="asgard"]::before {
+    background: center/cover url('planet-asgard.jpg');
+  }
+  .planets__poster[data-planet="coruscant"],
+  .planets__button[data-planet="coruscant"]::before {
+    background: center/cover url('planet-coruscant.jpg');
+  }
+
+  #planet-toogler-winter:checked ~ .planets__picker>.planets__button[data-planet="winter"],
+  #planet-toogler-islands:checked ~ .planets__picker>.planets__button[data-planet="islands"],
+  #planet-toogler-asgard:checked ~ .planets__picker>.planets__button[data-planet="asgard"],
+  #planet-toogler-coruscant:checked ~ .planets__picker>.planets__button[data-planet="coruscant"] {
+    height: 100px;
+    transform: translateX(20px) scale(1.2);
+  }
+
+  #planet-toogler-winter:checked ~ .planets__posters>.planets__poster[data-planet="winter"],
+  #planet-toogler-islands:checked ~ .planets__posters>.planets__poster[data-planet="islands"],
+  #planet-toogler-asgard:checked ~ .planets__posters>.planets__poster[data-planet="asgard"],
+  #planet-toogler-coruscant:checked ~ .planets__posters>.planets__poster[data-planet="coruscant"] {
+    opacity: 1;
+  }
+
+
+  #planet-toogler-winter:checked ~ .planets__info[data-planet="winter"],
+  #planet-toogler-islands:checked ~ .planets__info[data-planet="islands"],
+  #planet-toogler-asgard:checked ~ .planets__info[data-planet="asgard"],
+  #planet-toogler-coruscant:checked ~ .planets__info[data-planet="coruscant"] {
+    opacity: 1;
+  }

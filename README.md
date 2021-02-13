@@ -303,62 +303,57 @@
   </tr>  
   <tr>
     <td valign="top">22</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/xl_9A0P7VDIEFWx0tGVT1R1W3cXZHELUK7ELPHp5z1H6HHysc1hU8r3sMIY3CCYm.YlQyAACh1un7lLal?startTime=1612184446000">01.02</a></td>
+    <td valign="top">
+      <a>Верстка 3</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">23</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/vgv5aTmOcf5do30XaaFnihcLnrJ8dfGkooNYDoLHTrVj5Bzr3YPJuMfk2wENT6nj.X3vDjfYQNZFkJr4n?startTime=1612356988000">03.02</a></td>
+    <td valign="top">
+      <a>Верстка 4</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">24</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/BJ1p2Mw6rzn-n2rHrH9_zCc1xms2iebqEM9JIkJ7mmPLFZr7QTbx7t0OQdfg-vCU.uVzi_MFFRu_wDz5r?startTime=1612442878000">04.01</a></td>
+    <td valign="top">
+      <a>Верстка 5</a>
+      <a href="./Abstract-14">Пример сайта с clip-path рамками</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">25</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/VEnvIQ_Rm-VSlGbLhURJ9YueEC5fR2hU3NY6DnW6GnBq6oD8pk4zWMmwHYccUouV.qeyCxl41RGVN1ChR?startTime=1612788997000">08.01</a></td>
+    <td valign="top">
+      <a>Bootstrap</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">26</td>
-    <td valign="top"></td>
-    <td valign="top"><a></a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/kiVWo82d1OkZxMtO1eakvV18LZMND3MfEzCNx1eAvBNXTcHJtZ4c_s3bTlPm9cEi.nFnLf4nImqI0JdeH?startTime=1612961864000">10.01</a></td>
+    <td valign="top">
+      <a href="./Abstract-17">SASS</a>
     </td>
     <td valign="top"></td>
     <td valign="top"></td>
   </tr>  
   <tr>
     <td valign="top">27</td>
-    <td valign="top"></td>
-    <td valign="top"><a>Экзамен</a>
-      <ul>
-      </ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/M866ygDEMllW7uZi_ty0l4TYFTHbOS9KzDM3ZGx7MXoLwGwSTByxp7cD06kvz3gl.u1r-QIAPItoWJLnX?startTime=1613048271000">11.01<a/></td>
+    <td valign="top">
+      <a>Экзамен</a>
     </td>
-    <td valign="top"></td>
+    <td valign="top"><a href="./Exam">Exam</a></td>
     <td valign="top"></td>
   </tr>  
 </table>

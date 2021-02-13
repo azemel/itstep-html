@@ -1,0 +1,125 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+}
+
+.card {
+  background-image: linear-gradient(10px, green, #00806b, #002b80, #400080);
+}
+
+.card2 {
+  background-image: linear-gradient(90deg, #73738c, #666699, #5959a6, #4d4db3);
+}
+
+.image-card {
+  position: relative;
+}
+.image-card::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+}
+
+a > #dadf ~ .image-card-2 {
+  position: relative;
+}
+a > #dadf ~ .image-card-2::before {
+  content: "";
+  display: block;
+  width: 100%;
+  padding-bottom: 30%;
+}
+
+.text {
+  color: black;
+}
+.text_red {
+  color: red;
+}
+.text_green {
+  color: #8bc270;
+}
+
+.block {
+  font: 400 1 "Roboto";
+}
+
+.grid {
+  padding: 1/span 1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: red;
+  background-size: 100px;
+  background-position: fixed;
+  border-width: 2px 3px;
+  border-style: solid;
+  border-color: red black;
+}
+
+.class1 {
+  padding: 30px;
+}
+
+.class2 {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 4px;
+  padding-left: 3px;
+}
+
+.kcolb {
+  color: red;
+}
+.kcolb__elemnt {
+  color: blue;
+}
+.kcolb__qwerwqer {
+  color: blue;
+}
+.kcolb__qwerwqer::before {
+  color: green;
+}
+.kcolb_mod .qweqwe .block__elment {
+  color: white;
+}
+
+a {
+  color: green;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+}
+
+.grid {
+  grid-area: 1px/2;
+}
+
+/*# sourceMappingURL=main.css.map */

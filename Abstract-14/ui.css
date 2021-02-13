@@ -1,0 +1,175 @@
+
+
+:root {
+  --ctg-67-5: 0.41421356237;
+  --sin-45: 0.851;
+
+  --ink-emphasis: hsl(208, 99%, 80%);
+  --paper-emphasis: hsl(208, 99%, 50%);
+  --glow-dim: hsla(208, 99%, 45%, .7);
+  --glow-medium: hsla(208, 99%, 70%, 1);
+  --glow-bright: hsla(208, 99%, 60%, 1);
+
+  --paper: #2a2139;
+}
+
+.ui-box {
+  --border-thin: 2px;  
+  --border-thick: 6px;
+  --border-notch: 3px;
+  --border-both: calc(var(--border-thick) + var(--border-thin));
+  --corner-small: 10px;
+  --corner-big: 20px;
+  --inner-corder-big: calc(var(--corner-big) - var(--border-thin));
+  --delta: calc(var(--border-thin) * var(--ctg-67-5));
+  --delta-thick: calc(var(--border-thick) * var(--ctg-67-5));
+
+  position: relative;
+
+  padding-top: var(--border-both);
+  padding-right: calc(var(--corner-small) + var(--border-thin));
+  padding-bottom: calc(var(--corner-small) + var(--border-thin));
+  padding-left: calc(var(--corner-big) + var(--border-thin));
+}
+
+  .ui-box::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    clip-path: polygon(
+      /* Идем по часовой от левого верхнего угла*/ 
+      0 var(--corner-big),
+      var(--corner-big) 0,
+      
+      100% 0,
+
+      100% calc(100% - var(--corner-small)), 
+      calc(100% - var(--corner-small)) 100%, 
+      
+      0 100%
+    )
+  }
+
+    .ui-box_light::before {
+      background-color: hsla(208, 99%, 90%, .1);
+    }
+    .ui-box_dark::before {
+      background-color: hsla(208, 99%, 20%, .6);
+    }
+
+  .ui-box__border {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, .8)) drop-shadow(0 0 3px var(--glow-bright)) drop-shadow(0 0 10px var(--glow-dim));
+    z-index: 10;
+    pointer-events: none;
+  }
+
+    .ui-box__border::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%; 
+      background:  var(--ink-emphasis);
+      height: 100%;  
+  
+
+      clip-path: polygon(
+        evenodd, /* Чтобы вырезать внутренюю часть */
+
+        /* Идем по часовой от левого верхнего угла*/ 
+        
+        /* Внешняя форма: */
+        0 min(80%, 150px),
+        0 var(--corner-big),
+        var(--corner-big) 0,
+        
+        100% 0,
+
+        100% calc(100% - var(--corner-small)), 
+        calc(100% - var(--corner-small)) 100%, 
+        
+        0 100%,
+        
+        0 min(80%, 150px),
+        
+        /* Внутренняя форма: */
+
+        var(--border-thin) calc(var(--corner-big) + 3px),
+        calc(var(--corner-big) + var(--delta-thick) + 2px) var(--border-both),
+        
+        calc(min(40%, 200px) ) calc(var(--border-thin)),
+        100% 0,
+
+        100% calc(100% - var(--corner-small) - var(--border-thin) / var(--sin-45)), 
+        calc(100% - var(--corner-small) - var(--delta)) calc(100% - var(--border-thin)), 
+
+        0 100%
+      );
+    }
+    
+    .ui-box__content {
+      position: relative;
+      z-index: 5;
+    }
+
+
+
+.glitch-header {
+  position: relative;
+}
+
+  .glitch-header__main, .glitch-header__glitch {
+    text-shadow: 0 0 .2em var(--glow-medium), 0 0 .5em var(--glow-bright);
+    padding: 0 .2em;
+  }
+
+  .glitch-header__main {
+    position: relative;
+    z-index: 2;
+  }
+
+  .glitch-header__glitch {
+    --line-1: .1em;
+    --line-2: .32em;
+    --line-3: .58em;
+    --line-4: .72em;
+    --shift: -.03em;
+    pointer-events: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: translateX(var(--shift));
+    clip-path: polygon(
+      0 var(--line-1), 100% var(--line-1), 100% calc(var(--line-1) + 1px), 0% calc(var(--line-1) + 1px),
+      0 var(--line-2), 100% var(--line-2), 100% calc(var(--line-2) + 1px), 0% calc(var(--line-2) + 1px),
+      0 var(--line-3), 100% var(--line-3), 100% calc(var(--line-3) + 2px), 0% calc(var(--line-3) + 2px),
+      0 var(--line-4), 100% var(--line-4), 100% calc(var(--line-4) + 1px), 0% calc(var(--line-4) + 1px)
+    );
+  }
+
+
+
+.icon {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 3px var(--glow-bright)) drop-shadow(0 0 10px var(--glow-dim));
+}
+
+  .icon__path {
+    fill: none;
+    stroke: white;
+    stroke-width: 2px;
+    vector-effect: non-scaling-stroke;
+  }
